@@ -1,0 +1,25 @@
+.Container{
+    position: relative;
+    margin-bottom: 56px;
+}
+.Number{
+    position: absolute;
+    font-size: 80px;
+    font-weight: 800;
+    color: #FFFFFF;
+    opacity: 0.25;
+    transform: translate(-60%, -50%);
+}
+.Heading{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+.Content{
+    color: #FFFFFF;
+}
+@media only screen and (max-width: 1300px) {
+    .Number{
+        transform: translate(-20%, -40%);
+    }
+}

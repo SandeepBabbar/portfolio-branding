@@ -1,0 +1,38 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 165px 115px 165px;
+}
+.Tild{
+    position: absolute;
+    left: 0px;
+    transform: translateX(-50%);
+}
+.Container h2{
+    width: 635px;
+}
+@media only screen and (max-width: 1024px) {
+    .Container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 40px 100px 40px;
+    }
+    .Container h2{
+        width: 398px;
+    }
+    .Tild{
+        display: none;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .Container{
+        display: block;
+        padding: 100px 24px 100px 24px;
+    }
+    .Container h2{
+        width: 100%;
+        margin-bottom: 48px;
+    }
+}

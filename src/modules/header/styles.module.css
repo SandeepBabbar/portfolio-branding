@@ -1,0 +1,96 @@
+.Container{
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    flex: 1;
+}
+.Logo img{
+    padding-left: 165px;
+}
+.Icon{
+    display: none;
+}
+.Navigation{
+    display: flex;
+    align-items: center;
+    background-color: #F94F4F;
+    padding-right: 165px;
+    justify-content: space-between;
+}
+.Navigation .Links ul{
+    list-style: none;
+    margin: 73px 48px 73px 69px
+}
+.Navigation .Links ul li{
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 32px;
+    color: white;
+}
+.Navigation .Links ul li:last-child{
+    margin-right: 0px;
+}
+@media only screen and (max-width: 1300px) {
+    .Logo img{
+        padding-left: 40px;
+    }
+    .Navigation{
+        padding-right: 40px;
+    }
+    .Navigation .Links ul{
+        list-style: none;
+        margin: 73px 28px 73px 33px
+    }
+    .Navigation .Links ul li{
+        margin-right: 20px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    .Logo img{
+        padding-left: 80px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .Container{
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 24px 40px 24px;
+    }
+    .Logo img{
+        padding-left: 0px;
+    }
+    .Icon{
+        display: block;
+    }
+    .Navigation{
+        display: block;
+        position: absolute;
+        top: 116px;
+        right: 24px;
+        padding: 32px 26px 28px 26px;
+        background-color: #191921;
+    }
+    .Navigation .Links ul{
+        margin: 0px;
+        padding: 0px;
+    }
+    .Navigation .Links ul li{
+        display: block;
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 24px;
+        font-size: 18px;
+    }
+    .Container .Navigation .Btn button{
+        background-color: #F94F4F;
+        color: white;
+        font-weight: 800;
+        font-size: 16px;
+        padding: 24px 32px;
+    }
+    .Navigation .Btn button:hover{
+        background-color: #FF9393;
+        cursor: pointer;
+    }
+}

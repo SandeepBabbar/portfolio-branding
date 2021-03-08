@@ -1,0 +1,78 @@
+.Container{
+    display: flex;
+    max-height: 54vw;
+}
+.Image picture{
+    display: grid;
+}
+.Image{
+    flex: 1;
+    min-width: 50%;
+}
+.Image img{
+    width: 100%;
+}
+.Content{
+    flex: 1;
+    background-color: #191921;
+    padding: 200px 106px 200px 154px;
+    color: white;
+    position: relative;
+}
+.Tild{
+    position: absolute;
+    left: 0px;
+    transform: translate(-50%, 50%);
+}
+.Highlight{
+    color: #F94F4F;
+}
+.Content p{
+    margin-top: 43px;
+    margin-bottom: 48px;
+}
+@media only screen and (max-width: 1024px) {
+    .Container{
+        max-height: 70vw;
+    }
+    .Tild img{
+        width: 63px;
+    }
+    .Content{
+        flex: 1;
+        background-color: #191921;
+        padding: 120px 40px 120px 69px;
+        color: white;
+        position: relative;
+    }
+    .Content h1{
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .Container{
+        display: block;
+        max-height: 100%;
+    }
+    .Image{
+        display: block;
+    }
+    .Image img{
+        width: 100%;
+    }
+    .Content{
+        padding: 56px 24px 96px 24px;
+        width: 100%;
+    }
+    .Content p{
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .Tild{
+        top: 0px;
+        left: 24px;
+        transform: translate(0%, -25%);
+    }
+}

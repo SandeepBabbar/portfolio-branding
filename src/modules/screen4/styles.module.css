@@ -1,0 +1,113 @@
+.Container{
+    display: flex;
+    width: 100%;
+}
+.ControlContainer{
+    flex: 1;
+    max-width: 38vw;
+    z-index: 2;
+}
+.Control{
+    width: 51vw;
+    background-color: #191921;
+    padding: 152px 125px 152px 165px;
+}
+.Heading{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Heading img{
+    position: absolute;
+    transform: translateX(50%);
+    right: -125px;
+}
+.Control h2{
+    color: #FFFFFF;
+    margin-bottom: 51px;
+}
+.Btn{
+    display: flex;
+}
+.Previous{
+    margin-right: 16px;
+    display: inline-block;
+}
+.Previous:hover{
+    opacity: 0.5;
+}
+.Image{
+    flex: 1;
+    position: relative;
+}
+.Image img{
+    width: 100%;
+}
+.Image picture{
+    display: grid;
+}
+.Shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-shadow: inset 0 -60px 40px 0px #000000;
+    opacity: 0.75;
+}
+.Description{
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    right: 11vw;
+    bottom: 5vw;
+    color: white;
+    text-align: right;
+}
+@media only screen and (max-width: 1300px) {
+    .ControlContainer{
+        max-width: 43vw;
+    }
+    .Control{
+        padding: 100px 70px 100px 40px;
+    }
+    .Heading img{
+        width: 63px;
+        right: -70px;
+        transform: translate(50%, -100%);
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    .Control{
+        padding: 152px 125px 152px 165px;
+    }
+    .Heading img{
+        position: absolute;
+        transform: translateX(50%);
+        right: -125px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .Container{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        max-height: 100%;
+    }
+    .ControlContainer{
+        flex: 1;
+        max-width: 100%;
+        z-index: 1;
+    }
+    .Control{
+        width: 100%;
+        background-color: #191921;
+        padding: 64px 24px 64px 24px;
+    }
+    .Heading img{
+        display: none;
+    }
+    .Description{
+        right: 32px;
+        bottom: 35px;
+    }
+}

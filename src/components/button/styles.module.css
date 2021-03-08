@@ -1,0 +1,43 @@
+.Container button{
+    outline: none;
+    background: none;
+    border: none;
+    font-family: "Commissioner";
+}
+
+.Container.btn1 button{
+    background-color: #F94F4F;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 24px 32px;
+}
+.Container.btn1 button:hover{
+    background-color: #FF9393;
+    cursor: pointer;
+}
+
+.Container.btn2 button{
+    background-color: #191921;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 24px 32px;
+}
+.Container.btn2 button:hover{
+    background-color: #434356;
+    cursor: pointer;
+}
+
+.Container.btn3 button{
+    color: #F94F4F;
+    font-weight: 800;
+    font-size: 16px;
+    border-bottom: 2px solid #F94F4F;
+    padding-bottom: 8px;
+}
+.Container.btn3 button:hover{
+    color: #FF9393;
+    border-bottom: 2px solid #FF9393;
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+.Container{
+    display: flex;
+    align-items: center;
+    padding-left: 165px;
+    background-image: url("../../assets/desktop/image-hero.jpg");
+    height: 800px;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Image{
+    display: none;
+}
+.Content{
+    width: 730px;
+}
+.Content p{
+    margin-top: 62px;
+    width: 540px;
+    margin-bottom: 48px;
+}
+@media only screen and (max-width: 1300px) {
+    .Container{
+        padding-left: 40px;
+        background-image: url("../../assets/tablet/image-hero.jpg");
+        height: 606px;
+    }
+    .Content{
+        width: 398px;
+    }
+    .Content p{
+        margin-top: 62px;
+        width: 398px;
+        margin-bottom: 48px;
+    }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1300px) {
+    .Container{
+        padding-left: 80px;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .Container{
+        display: block;
+        background-image: none;
+        height: auto;
+        padding: 0px;
+    }
+    .Image{
+        display: block;
+    }
+    .Image img{
+        width: 100%;
+    }
+    .Content{
+        padding: 56px 24px 96px 24px;
+        width: 100%;
+    }
+    .Content p{
+        margin-top: 15px;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
